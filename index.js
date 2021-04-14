@@ -16,6 +16,11 @@ app.get('**', (req, res) => {
   });
 });
 
+// bandaid override
+if (process.env.APP_HOST) {
+  config.port = Number(process.env.APP_HOST.split(':')[1]);
+}
+
 const server = app.listen(config.port, () => {
   console.log(`Server running at port ${server.address().port}`);
 });
