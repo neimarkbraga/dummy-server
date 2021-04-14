@@ -1,0 +1,16 @@
+[application]
+id = "dummy-server"
+repo = "https://github.com/neimarkbraga/dummy-server"
+health_endpoint = "/"
+run = [
+    ["npm", "install"],
+    ["npm", "run", "start"]
+]
+
+[dns]
+zone = "iamneimark.com"
+domain = "dummy-server.iamneimark.com"
+proxied = true
+
+[caddy]
+domains = ["dummy-server.iamneimark.com"]
