@@ -10,7 +10,10 @@ const config = (() => {
 })();
 
 app.get('**', (req, res) => {
-  res.json('Hello World! [0]');
+  res.json({
+    message: 'Hello World! [0]',
+    APP_HOST: process.env.APP_HOST
+  });
 });
 
 const server = app.listen(config.port, () => {
