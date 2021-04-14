@@ -6,6 +6,8 @@ run = [
     ["npm", "install"],
     ["npm", "run", "start"]
 ]
+envs = ["STATE=active", "APP_BIND_CONFIG=localhost:86"]
+#base_dir = "frontend/app"
 
 [dns]
 zone = "iamneimark.com"
