@@ -1,0 +1,22 @@
+{
+  "name": "dummy-server",
+  "version": "1.0.0",
+  "description": "Just a dummy server",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neimarkbraga/dummy-server.git"
+  },
+  "author": "Makoy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/neimarkbraga/dummy-server/issues"
+  },
+  "homepage": "https://github.com/neimarkbraga/dummy-server#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
