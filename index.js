@@ -11,7 +11,7 @@ const config = (() => {
 
 app.get('**', (req, res) => {
   res.json({
-    message: 'Hello World! [1]',
+    message: 'Hello World! [2]',
     APP_HOST: process.env.APP_HOST
   });
 });
