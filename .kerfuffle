@@ -14,10 +14,10 @@ envs = []
 base_dir = ""
 
 [proxy.client]
-host = ["dummy-server.iamneimark.com"]
+host = ["dummy-server.lostmonkeys.com"]
 
 
 [cloudflare.client]
-host = ["dummy-server.iamneimark.com"]
-zone = "iamneimark.com"
+host = ["dummy-server.lostmonkeys.com"]
+zone = "lostmonkeys.com"
 proxied = true
