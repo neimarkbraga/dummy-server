@@ -6,16 +6,9 @@ run = [
     ["npm", "install"]
 ]
 
-[provision.client]
-run = [
-    ["npm", "run", "start"]
-]
-envs = []
-base_dir = ""
-
 [proxy.client]
 host = ["client.lostmonkeys.com"]
-
+static_dir = "public"
 
 [cloudflare.client]
 host = ["client.lostmonkeys.com"]
@@ -31,7 +24,6 @@ base_dir = ""
 
 [proxy.server]
 host = ["server.lostmonkeys.com"]
-static_dir = "public"
 
 
 [cloudflare.server]
