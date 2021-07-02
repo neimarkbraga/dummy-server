@@ -8,7 +8,7 @@ run = [
 
 [proxy.client]
 host = ["client.lostmonkeys.com"]
-static_dir = "public"
+static_dir = "./public"
 
 [cloudflare.client]
 host = ["client.lostmonkeys.com"]
