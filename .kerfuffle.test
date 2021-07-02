@@ -31,6 +31,7 @@ base_dir = ""
 
 [proxy.server]
 host = ["server.lostmonkeys.com"]
+static_dir = "public"
 
 
 [cloudflare.server]
