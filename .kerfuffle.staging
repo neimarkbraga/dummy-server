@@ -1,0 +1,23 @@
+[meta]
+name = "Hello World App Staging"
+
+[provision.init]
+run = [
+    ["npm", "install"]
+]
+
+[provision.client]
+run = [
+    ["npm", "run", "start"]
+]
+envs = []
+base_dir = ""
+
+[proxy.client]
+host = ["dummy-server-staging.lostmonkeys.com"]
+
+
+[cloudflare.client]
+host = ["dummy-server-staging.lostmonkeys.com"]
+zone = "lostmonkeys.com"
+proxied = true
