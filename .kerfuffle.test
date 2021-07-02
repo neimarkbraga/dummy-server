@@ -1,0 +1,39 @@
+[meta]
+name = "Hello World App Staging"
+
+[provision.init]
+run = [
+    ["npm", "install"]
+]
+
+[provision.client]
+run = [
+    ["npm", "run", "start"]
+]
+envs = []
+base_dir = ""
+
+[proxy.client]
+host = ["client.lostmonkeys.com"]
+
+
+[cloudflare.client]
+host = ["client.lostmonkeys.com"]
+zone = "lostmonkeys.com"
+proxied = true
+
+[provision.server]
+run = [
+    ["npm", "run", "start"]
+]
+envs = []
+base_dir = ""
+
+[proxy.server]
+host = ["server.lostmonkeys.com"]
+
+
+[cloudflare.server]
+host = ["server.lostmonkeys.com"]
+zone = "lostmonkeys.com"
+proxied = true
